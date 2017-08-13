@@ -1,0 +1,21 @@
+{
+    "name": "ovedfs/mvc",
+    "description": "MVC for simple php apps",
+    "type": "project",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Oved Fiso",
+            "email": "ovedfs@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "require": {
+        "twig/twig": "2.*",
+        "nesbot/carbon": "^1.22"
+    }
+}

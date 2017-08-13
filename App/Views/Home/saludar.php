@@ -1,0 +1,1 @@
+<h1>Hola <?php echo $nombre ?>, saludos!!!</h1>

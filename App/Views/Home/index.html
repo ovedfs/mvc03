@@ -1,0 +1,25 @@
+{% extends "template.html" %}
+
+{% block title %}My Site {{ parent() }}{% endblock %}
+
+{% block content %}
+	<section>
+	{% for post in posts %}
+		<article>
+			<h3>{{ post.title }}</h3>
+			<p><img src="{{ asset('images/posts/') }}{{ post.image }}"></p>
+			<p><b>Publicada: </b>{{ dateForHumans(post.date) }}</p>
+			<p>{{ post.short_description }}</p>
+		</article>
+	{% endfor %}
+	</section>
+{% endblock %}
+
+{% block aside %}
+	{{ parent() }}
+	<div class="widget">
+		<h3>Otro widget</h3>
+		<p>Con su contenido</p>
+	</div>
+{% endblock %}
+
